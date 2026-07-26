@@ -10,6 +10,12 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: 'Estuda DF',
   description: 'Plataforma educacional',
+  openGraph: {
+    images: ['/estudaDF_white_no_sentence.png'],
+  },
+  twitter: {
+    images: ['/estudaDF_white_no_sentence.png'],
+  },
 };
 
 export default function RootLayout({
