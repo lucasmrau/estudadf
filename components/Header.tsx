@@ -28,6 +28,7 @@ export default function Header() {
               width={90}
               height={84}
               priority
+              style={{ height: 'auto' }}
               className='rounded-full'
             />
           </Link>

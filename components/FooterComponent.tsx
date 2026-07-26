@@ -131,6 +131,7 @@ export default function FooterComponent() {
                     alt='Educa DF'
                     width={112}
                     height={112}
+                    style={{ width: 'auto', height: 'auto' }}
                   />
                 </span>
               </div>
