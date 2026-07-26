@@ -128,7 +128,7 @@ export default function FooterComponent() {
                 <span className='inline-flex h-28 w-28 items-center justify-center rounded-full bg-white'>
                   <Image
                     src='/estudaDF.png'
-                    alt='Educa DF'
+                    alt='Estuda DF'
                     width={112}
                     height={112}
                     style={{ width: 'auto', height: 'auto' }}
@@ -137,10 +137,9 @@ export default function FooterComponent() {
               </div>
             </div>
             <p className='mt-1 max-w-2xl text-sm text-white/75 md:mt-3 md:text-base'>
-              Copyright 2026 Educa DF <br />
+              Copyright 2026 Educa DF<sup className='text-[0.6em] align-super'>®</sup> <br />
               Educação gratuita com impacto social no Distrito Federal
-              <span className='hidden md:inline'> | </span>
-              <br className='md:hidden' />
+              <br />
               Desenvolvido por{' '}
               <a
                 href='https://lucasrau.com'
