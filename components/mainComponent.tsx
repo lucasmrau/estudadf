@@ -46,7 +46,7 @@ export default function MainComponent() {
       />
       <span
         aria-hidden='true'
-        className='orb-enter pointer-events-none absolute right-[8%] top-[38%] h-5 w-5 rounded-full bg-brand-white [animation-delay:560ms] md:right-[32%] md:h-7 md:w-7'
+        className='orb-enter pointer-events-none absolute right-[2%] top-[33%] h-5 w-5 rounded-full bg-brand-white [animation-delay:560ms] md:right-[32%] md:h-7 md:w-7'
       />
       <span
         aria-hidden='true'
