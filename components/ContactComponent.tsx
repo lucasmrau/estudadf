@@ -22,7 +22,7 @@ export default function ContactComponent() {
   return (
     <section
       id='suporte'
-      className='bg-white py-16 md:py-24'
+      className='bg-white py-8 md:py-24'
     >
       <div className='page-width grid gap-10 px-4 lg:grid-cols-[1fr_1.05fr] lg:items-center'>
         <div className='min-w-0'>

@@ -3,14 +3,14 @@ import Image from 'next/image';
 
 export default function MainComponent() {
   return (
-    <section className='relative overflow-hidden bg-brand-blue pt-20 text-brand-white min-h-[90vh] md:pt-24'>
+    <section className='relative overflow-hidden bg-brand-blue pt-20 text-brand-white min-h-[70vh] md:pt-24'>
       <span
         aria-hidden='true'
         className='orb-enter pointer-events-none absolute left-[-2%] top-[17%] h-12 w-12 rounded-full bg-brand-light-blue [animation-delay:60ms] md:left-[6%] md:h-16 md:w-16'
       />
       <span
         aria-hidden='true'
-        className='orb-enter pointer-events-none absolute left-[3%] bottom-[8%] h-10 w-10 rounded-full bg-brand-yellow [animation-delay:160ms] md:left-[18%] md:h-14 md:w-14'
+        className='orb-enter pointer-events-none absolute left-[3%] bottom-[8%] h-10 w-10 rounded-full bg-brand-yellow [animation-delay:160ms] md:left-[6%] md:h-14 md:w-14'
       />
       <span
         aria-hidden='true'
@@ -34,7 +34,7 @@ export default function MainComponent() {
       />
       <span
         aria-hidden='true'
-        className='orb-enter pointer-events-none absolute right-[16%] bottom-[14%] h-11 w-11 rounded-full bg-brand-white [animation-delay:260ms] md:h-16 md:w-16'
+        className='orb-enter pointer-events-none absolute right-[12%] bottom-[14%] h-11 w-11 rounded-full bg-brand-white [animation-delay:260ms] md:h-16 md:w-16'
       />
       <span
         aria-hidden='true'
@@ -57,34 +57,37 @@ export default function MainComponent() {
 
       <div
         id='inicio'
-        className='relative z-10 page-width grid min-h-[calc(90vh-80px)] w-full items-center md:min-h-[calc(90vh-96px)] lg:grid-cols-[0.85fr_1.15fr] lg:items-end'
+        className='relative z-10 page-width min-h-[calc(70vh-80px)] w-full md:min-h-[calc(65vh-96px)]'
       >
-        <div className='order-2 mx-auto flex h-full w-full max-w-lg items-end lg:order-2 lg:mx-0 lg:max-w-3xl'>
-          <Image
-            src='/vertical-shot-happy-young-woman.png'
-            alt='Estudante com caderno fazendo anotacoes'
-            width={1280}
-            height={1620}
-            className='mx-auto h-auto max-h-[78vh] w-full rounded-4xl object-contain object-top lg:max-h-[84vh]'
-            priority
-          />
-        </div>
+        <h1 className='text-4xl font-bold leading-tight md:text-7xl text-center mt-10'>Estuda DF</h1>
 
-        <div className='order-1 max-w-5xl text-center lg:order-1 lg:self-center lg:text-left mt-10 lg:mt-0'>
-          <h1 className='text-4xl font-bold leading-tight md:text-7xl'>Estuda DF</h1>
-          <h2 className='mx-auto mt-4 max-w-3xl text-xl font-semibold md:text-3xl lg:mx-0'>
-            Educação gratuita que transforma oportunidades
-          </h2>
-          <p className='mx-auto mt-6 max-w-4xl text-base leading-relaxed md:text-xl lg:mx-0'>
-            O Educa DF reúne cursos preparatórios para concursos públicos e cursos de capacitação profissional, com professores
-            qualificados, metodologia prática e acesso gratuito.
-          </p>
-          <a
-            href='#suporte'
-            className='mt-8 inline-flex rounded-full bg-brand-yellow px-8 py-3 text-base font-bold text-brand-blue transition-transform duration-200 hover:scale-105 md:text-lg'
-          >
-            Inscreva-se
-          </a>
+        <div className='grid w-full items-center lg:grid-cols-[0.5fr_1.5fr] lg:items-end mt-6'>
+          <div className='order-2 mx-auto flex h-full w-full items-end lg:order-2 mt-4 lg:mt-0 lg:mx-0'>
+            <Image
+              src='/students_main.png'
+              alt='Estudante com caderno fazendo anotacoes'
+              width={3000}
+              height={3000}
+              className='mx-auto h-auto w-full rounded-4xl object-contain object-top '
+              priority
+            />
+          </div>
+
+          <div className='order-1 max-w-5xl text-center lg:order-1 lg:self-center lg:text-left'>
+            <h2 className='mx-auto max-w-3xl text-xl font-semibold md:text-3xl lg:mx-0'>
+              Educação gratuita que transforma oportunidades
+            </h2>
+            <p className='mx-auto mt-6 max-w-4xl text-base leading-relaxed md:text-xl lg:mx-0'>
+              O Educa DF reúne cursos preparatórios para concursos públicos e cursos de capacitação profissional, com professores
+              qualificados, metodologia prática e acesso gratuito.
+            </p>
+            <a
+              href='#suporte'
+              className='mt-8 inline-flex rounded-full bg-brand-yellow px-8 py-3 text-base font-bold text-brand-blue transition-transform duration-200 hover:scale-105 md:text-lg'
+            >
+              Inscreva-se
+            </a>
+          </div>
         </div>
       </div>
     </section>

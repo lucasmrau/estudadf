@@ -292,7 +292,7 @@ export default function AboutComponent() {
         <section className='rounded-4xl bg-brand-white p-4 sm:p-8 lg:col-span-2'>
           <h3 className='text-center text-3xl font-bold text-brand-ink md:text-5xl'>Como funciona</h3>
 
-          <div className='mt-24 grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center'>
+          <div className='mt-16 lg:mt-24 grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center'>
             <div className='relative mx-auto w-full max-w-2xl lg:max-w-4xl'>
               <div
                 className='absolute -inset-2 rounded-4xl bg-brand-blue/10 blur-2xl'
@@ -303,7 +303,7 @@ export default function AboutComponent() {
                 alt='Participante do Educa DF'
                 width={980}
                 height={1160}
-                className='relative z-10 -ml-[6%] w-[112%] max-w-none rounded-4xl object-cover sm:ml-0 sm:w-full sm:max-w-full lg:origin-left lg:scale-125'
+                className='relative z-10  w-[135%] max-w-none rounded-4xl object-cover sm:ml-0 sm:w-full sm:max-w-full lg:origin-left lg:scale-125'
               />
             </div>
 
