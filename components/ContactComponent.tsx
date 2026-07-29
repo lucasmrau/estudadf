@@ -6,8 +6,8 @@ import { Textarea } from '@/components/ui/textarea';
 const contactCards = [
   {
     title: 'E-mail',
-    value: 'contato@estudadf.com.br',
-    href: 'mailto:contato@estudadf.com.br',
+    value: 'atendimento@estudadf.com.br',
+    href: 'mailto:atendimento@estudadf.com.br',
     icon: FaEnvelope,
   },
   {
