@@ -23,7 +23,7 @@ export default function Header() {
             aria-label='Voltar para a página inicial'
           >
             <Image
-              src='/estudaDF1.png'
+              src='/estudaDF.png'
               alt='EstudaDF'
               width={180}
               height={168}

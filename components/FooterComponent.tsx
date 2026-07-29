@@ -127,7 +127,7 @@ export default function FooterComponent() {
               <div className='inline-flex items-center gap-3'>
                 <span className='inline-flex h-28 w-28 items-center justify-center rounded-full bg-white'>
                   <Image
-                    src='/estudaDF1.png'
+                    src='/estudaDF.png'
                     alt='Estuda DF'
                     width={224}
                     height={224}
