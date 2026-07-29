@@ -12,8 +12,8 @@ const contactCards = [
   },
   {
     title: 'Telefone',
-    value: '(61) 99888-7766',
-    href: 'tel:+5561998887766',
+    value: '(61) 99304-7272',
+    href: 'tel:+5561993047272',
     icon: FaPhone,
   },
 ];

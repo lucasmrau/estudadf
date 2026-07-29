@@ -19,16 +19,19 @@ const flowCards = [
     title: 'Faça sua inscrição',
     text: 'Preencha seus dados no formulário oficial e envie sua inscrição em poucos minutos.',
     icon: 'edit' as const,
+    highlight: false,
   },
   {
     title: 'Aguarde confirmação',
     text: 'Nossa equipe valida os cadastros para garantir organização e melhor atendimento das turmas. A confirmação da inscrição será enviada por e-mail.',
     icon: 'check' as const,
+    highlight: false,
   },
   {
     title: 'Inicie sua jornada',
     text: 'No primeiro dia, leve 1 kg de alimento nao perecivel e comece sua preparacao com apoio completo.',
     icon: 'rocket' as const,
+    highlight: true,
   },
 ];
 
@@ -41,18 +44,10 @@ const scheduleItems = [
   'Sexta: simulado.',
 ];
 
-const classLocations = [
-  'Guará / Estrutural',
-  'Taguatinga',
-  'Ceilândia',
-  'Gama / Santa Maria',
-  'Sobradinho / Planaltina',
-  'São Sebastião',
-  'Brazlândia',
-  'Riacho Fundo',
-];
+const classLocations = ['Guará', 'Taguatinga', 'Ceilândia', 'Gama', 'Planaltina', 'São Sebastião', 'Brazlândia', 'Riacho Fundo'];
 
-function TopicIcon({ icon }: { icon: Topic['icon'] }) {
+function TopicIcon({ icon, highlight = false }: { icon: Topic['icon']; highlight?: boolean }) {
+  const colorClass = highlight ? 'text-brand-yellow' : 'text-brand-blue';
   if (icon === 'screen') {
     return (
       <svg
@@ -201,7 +196,7 @@ function TopicIcon({ icon }: { icon: Topic['icon'] }) {
       <svg
         viewBox='0 0 24 24'
         fill='none'
-        className='h-6 w-6 text-brand-blue'
+        className={`h-6 w-6 ${colorClass}`}
         aria-hidden='true'
       >
         <path
@@ -311,10 +306,21 @@ export default function AboutComponent() {
               {flowCards.map(card => (
                 <article
                   key={card.title}
-                  className='flex gap-4 rounded-3xl border border-brand-blue/12 bg-white p-5 shadow-[0_8px_28px_rgba(45,47,51,0.08)] md:items-center md:p-6'
+                  className={`flex gap-4 rounded-3xl p-5 md:items-center md:p-6 ${
+                    card.highlight
+                      ? 'border-2 border-brand-yellow bg-brand-yellow shadow-[0_12px_36px_rgba(0,66,191,0.15)]'
+                      : 'border border-brand-blue/12 bg-white shadow-[0_8px_28px_rgba(45,47,51,0.08)]'
+                  }`}
                 >
-                  <span className='mt-1 inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-yellow md:mt-0'>
-                    <TopicIcon icon={card.icon} />
+                  <span
+                    className={`mt-1 inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full md:mt-0 ${
+                      card.highlight ? 'bg-brand-blue' : 'bg-brand-yellow'
+                    }`}
+                  >
+                    <TopicIcon
+                      icon={card.icon}
+                      highlight={card.highlight}
+                    />
                   </span>
                   <div>
                     <h4 className='text-xl font-bold text-brand-ink md:text-2xl'>{card.title}</h4>
@@ -357,7 +363,7 @@ export default function AboutComponent() {
             </article>
 
             <article className='rounded-3xl border border-brand-white/70 bg-brand-white p-5 shadow-[0_12px_30px_rgba(0,0,0,0.12)] md:p-6'>
-              <h4 className='text-xl font-bold text-brand-blue md:text-2xl'>Locais das Aulas</h4>
+              <h4 className='text-xl font-bold text-brand-blue md:text-2xl'>Locais das Aulas Presenciais</h4>
               <ul className='mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2'>
                 {classLocations.map(location => (
                   <li

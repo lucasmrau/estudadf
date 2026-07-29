@@ -4,11 +4,11 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 const classLocations = [
-  { value: 'guara-estrutural', label: 'Guará / Estrutural' },
+  { value: 'guara', label: 'Guará' },
   { value: 'taguatinga', label: 'Taguatinga' },
   { value: 'ceilandia', label: 'Ceilândia' },
-  { value: 'gama-santa-maria', label: 'Gama / Santa Maria' },
-  { value: 'sobradinho-planaltina', label: 'Sobradinho / Planaltina' },
+  { value: 'gama', label: 'Gama' },
+  { value: 'planaltina', label: 'Planaltina' },
   { value: 'sao-sebastiao', label: 'São Sebastião' },
   { value: 'brazlandia', label: 'Brazlândia' },
   { value: 'riacho-fundo', label: 'Riacho Fundo' },
@@ -61,8 +61,56 @@ export default function InscrevaSePage() {
                   Nome completo
                   <Input
                     type='text'
-                    placeholder='Seu nome'
+                    placeholder='Seu nome completo'
                     className='mt-2 h-14 rounded-2xl px-5 text-base'
+                  />
+                </label>
+
+                <div className='space-y-5'>
+                  <p className='text-sm font-bold text-brand-ink md:text-base'>Endereço</p>
+                  <div className='grid grid-cols-2 gap-4'>
+                    <label className='block text-sm font-medium text-brand-ink/80'>
+                      Cidade
+                      <Input
+                        type='text'
+                        placeholder='Ex: Brasília'
+                        className='mt-2 h-14 rounded-2xl px-5 text-base'
+                      />
+                    </label>
+                    <label className='block text-sm font-medium text-brand-ink/80'>
+                      Bairro
+                      <Input
+                        type='text'
+                        placeholder='Ex: Guará II'
+                        className='mt-2 h-14 rounded-2xl px-5 text-base'
+                      />
+                    </label>
+                  </div>
+                  <div className='grid grid-cols-[1fr_120px] gap-4'>
+                    <label className='block text-sm font-medium text-brand-ink/80'>
+                      Rua
+                      <Input
+                        type='text'
+                        placeholder='Nome da rua'
+                        className='mt-2 h-14 rounded-2xl px-5 text-base'
+                      />
+                    </label>
+                    <label className='block text-sm font-medium text-brand-ink/80'>
+                      Número
+                      <Input
+                        type='text'
+                        placeholder='Nº'
+                        className='mt-2 h-14 rounded-2xl px-5 text-base'
+                      />
+                    </label>
+                  </div>
+                </div>
+
+                <label className='block text-sm font-bold text-brand-ink md:text-base'>
+                  Data de nascimento
+                  <Input
+                    type='date'
+                    className='mt-2 h-14 rounded-2xl px-5 text-base [direction:rtl] [&::-webkit-calendar-picker-indicator]:ml-0 [&::-webkit-calendar-picker-indicator]:mr-auto'
                   />
                 </label>
 
@@ -76,7 +124,7 @@ export default function InscrevaSePage() {
                 </label>
 
                 <label className='block text-sm font-bold text-brand-ink md:text-base'>
-                  Telefone
+                  WhatsApp
                   <Input
                     type='tel'
                     placeholder='(61) 99999-9999'
@@ -101,6 +149,17 @@ export default function InscrevaSePage() {
                       ))}
                     </SelectContent>
                   </Select>
+                </label>
+
+                <label className='flex items-start gap-3 cursor-pointer'>
+                  <input
+                    type='checkbox'
+                    className='mt-1 h-5 w-5 shrink-0 rounded border-2 border-brand-blue/30 accent-brand-blue'
+                  />
+                  <span className='text-sm text-brand-ink/80 leading-relaxed'>
+                    Autorizo o uso dos meus dados para recebimento de mensagens e comunicações do Estuda DF, conforme a Lei Geral
+                    de Proteção de Dados (LGPD).
+                  </span>
                 </label>
 
                 <button

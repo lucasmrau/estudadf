@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function MainComponent() {
   return (
-    <section className='relative overflow-hidden bg-brand-blue pt-20 text-brand-white min-h-[70vh] md:pt-24'>
+    <section className='relative overflow-hidden bg-brand-blue pt-20 text-brand-white md:pt-24 pb-0'>
       <span
         aria-hidden='true'
         className='orb-enter pointer-events-none absolute left-[-2%] top-[17%] h-12 w-12 rounded-full bg-brand-light-blue [animation-delay:60ms] md:left-[6%] md:h-16 md:w-16'
@@ -14,15 +14,15 @@ export default function MainComponent() {
       />
       <span
         aria-hidden='true'
-        className='orb-enter pointer-events-none absolute left-[7%] top-[12%] h-6 w-6 rounded-full bg-brand-white [animation-delay:220ms] md:left-[28%] md:h-8 md:w-8'
+        className='orb-enter pointer-events-none absolute left-[7%] top-[12%] h-6 w-6 rounded-full bg-brand-white [animation-delay:220ms] md:left-[28%] md:top-[10%] md:h-8 md:w-8'
       />
       <span
         aria-hidden='true'
-        className='orb-enter pointer-events-none absolute left-[2%] bottom-[34%] h-8 w-8 rounded-full bg-brand-light-blue/90 [animation-delay:310ms] md:left-[10%] md:h-12 md:w-12'
+        className='orb-enter pointer-events-none absolute left-[2%] bottom-[34%] h-8 w-8 rounded-full bg-brand-light-blue/90 [animation-delay:310ms] md:left-[2%] 2xl:left-[10%] md:h-12 md:w-12'
       />
       <span
         aria-hidden='true'
-        className='orb-enter pointer-events-none absolute left-[2%] top-[29%] h-5 w-5 rounded-full bg-brand-yellow/85 [animation-delay:420ms] md:left-[36%] md:h-7 md:w-7'
+        className='orb-enter pointer-events-none absolute left-[2%] top-[29%] h-5 w-5 rounded-full bg-brand-yellow/85 [animation-delay:420ms] md:left-[36%] md:top-[27%] md:h-7 md:w-7'
       />
       <span
         aria-hidden='true'
@@ -46,7 +46,7 @@ export default function MainComponent() {
       />
       <span
         aria-hidden='true'
-        className='orb-enter pointer-events-none absolute right-[2%] top-[33%] h-5 w-5 rounded-full bg-brand-white [animation-delay:560ms] md:right-[32%] md:h-7 md:w-7'
+        className='orb-enter pointer-events-none absolute right-[2%] top-[33%] h-5 w-5 rounded-full bg-brand-white [animation-delay:560ms] md:right-[32%] md:top-[35%] md:h-7 md:w-7'
       />
       <span
         aria-hidden='true'
@@ -57,7 +57,7 @@ export default function MainComponent() {
 
       <div
         id='inicio'
-        className='relative z-10 page-width min-h-[calc(70vh-80px)] w-full md:min-h-[calc(65vh-96px)]'
+        className='relative z-10 page-width w-full'
       >
         <h1 className='text-4xl font-bold leading-tight md:text-7xl text-center mt-10'>Estuda DF</h1>
 
@@ -68,14 +68,14 @@ export default function MainComponent() {
               alt='Estudante com caderno fazendo anotacoes'
               width={3000}
               height={3000}
-              className='mx-auto h-auto w-full rounded-4xl object-contain object-top '
+              className='h-auto w-full rounded-t-4xl object-contain object-bottom block'
               priority
             />
           </div>
 
           <div className='order-1 max-w-5xl text-center lg:order-1 lg:self-center lg:text-left'>
             <h2 className='mx-auto max-w-3xl text-xl font-semibold md:text-3xl lg:mx-0'>
-              Educação gratuita que transforma oportunidades
+              Educação gratuita que transforma <span className='text-brand-yellow'>oportunidades</span>
             </h2>
             <p className='mx-auto mt-6 max-w-4xl text-base leading-relaxed md:text-xl lg:mx-0'>
               O Educa DF reúne cursos preparatórios para concursos públicos e cursos de capacitação profissional, com professores

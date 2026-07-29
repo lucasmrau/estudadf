@@ -127,11 +127,12 @@ export default function FooterComponent() {
               <div className='inline-flex items-center gap-3'>
                 <span className='inline-flex h-28 w-28 items-center justify-center rounded-full bg-white'>
                   <Image
-                    src='/estudaDF.png'
+                    src='/estudaDF1.png'
                     alt='Estuda DF'
                     width={112}
                     height={112}
                     style={{ width: 'auto', height: 'auto' }}
+                    className='rounded-full'
                   />
                 </span>
               </div>

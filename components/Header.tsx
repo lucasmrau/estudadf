@@ -23,13 +23,13 @@ export default function Header() {
             aria-label='Voltar para a página inicial'
           >
             <Image
-              src='/estudaDF.png'
+              src='/estudaDF1.png'
               alt='EstudaDF'
               width={90}
               height={84}
               priority
               style={{ height: 'auto' }}
-              className='rounded-full'
+              className='rounded-full w-16 md:w-22.5'
             />
           </Link>
         </div>
