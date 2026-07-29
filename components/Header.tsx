@@ -25,8 +25,8 @@ export default function Header() {
             <Image
               src='/estudaDF1.png'
               alt='EstudaDF'
-              width={90}
-              height={84}
+              width={180}
+              height={168}
               priority
               style={{ height: 'auto' }}
               className='rounded-full w-16 md:w-22.5'

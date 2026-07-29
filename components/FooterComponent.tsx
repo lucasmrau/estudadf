@@ -129,8 +129,8 @@ export default function FooterComponent() {
                   <Image
                     src='/estudaDF1.png'
                     alt='Estuda DF'
-                    width={112}
-                    height={112}
+                    width={224}
+                    height={224}
                     style={{ width: 'auto', height: 'auto' }}
                     className='rounded-full'
                   />
