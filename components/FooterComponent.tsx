@@ -125,13 +125,12 @@ export default function FooterComponent() {
           <div className='flex flex-col gap-6 md:flex-row md:items-center md:justify-between'>
             <div>
               <div className='inline-flex items-center gap-3'>
-                <span className='inline-flex h-28 w-28 items-center justify-center rounded-full bg-white'>
+                <span className='relative inline-flex h-28 w-28 items-center justify-center rounded-full bg-white'>
                   <Image
-                    src='/estudaDF.png'
+                    src='/estudaDF4.png'
                     alt='Estuda DF'
-                    width={224}
-                    height={224}
-                    className='rounded-full'
+                    fill
+                    className='object-contain p-2'
                   />
                 </span>
               </div>
