@@ -25,7 +25,7 @@ export default function InscrevaSePage() {
           aria-hidden='true'
         />
         <span
-          className='absolute right-[12%] top-[16%] h-7 w-7 rounded-full bg-brand-light-blue/80'
+          className='absolute right-[5%] top-[10%] h-7 w-7 rounded-full bg-brand-light-blue/80'
           aria-hidden='true'
         />
         <span
