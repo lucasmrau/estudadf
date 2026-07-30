@@ -29,7 +29,7 @@ export default function Header() {
               height={160}
               priority
               style={{ height: 'auto' }}
-              className='w-40 p-3'
+              className='w-25 p-2 md:w-40 md:p-3'
             />
           </Link>
         </div>

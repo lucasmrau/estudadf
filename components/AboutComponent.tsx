@@ -39,7 +39,6 @@ const scheduleItems = [
   'Início: 10/08',
   '1ª Semana: 10/08 a 14/08',
   '2ª Semana: 17/08 a 21/08',
-  '3ª Semana: 24/08 a 28/08 (confirmar)',
   'Segunda a quinta: aulas presenciais.',
   'Sexta: simulado.',
 ];
@@ -383,7 +382,7 @@ export default function AboutComponent() {
               Lançaremos mais à frente esse Mega Aulão no site.
             </p> */}
             <div className='mt-4 grid gap-2 text-brand-ink md:grid-cols-3 md:gap-4'>
-              <p className='rounded-xl bg-brand-white px-3 py-2 text-sm font-semibold md:text-base'>Data: 05/09</p>
+              <p className='rounded-xl bg-brand-white px-3 py-2 text-sm font-semibold md:text-base'>Datas: 22 e 29 de Agosto</p>
               <p className='rounded-xl bg-brand-white px-3 py-2 text-sm font-semibold md:text-base'>Horário: 08h às 18h</p>
               <p className='rounded-xl bg-brand-white/80 px-3 py-2 text-sm font-semibold md:text-base'>Local: A confirmar</p>
             </div>

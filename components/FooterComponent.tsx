@@ -131,7 +131,6 @@ export default function FooterComponent() {
                     alt='Estuda DF'
                     width={224}
                     height={224}
-                    style={{ width: 'auto', height: 'auto' }}
                     className='rounded-full'
                   />
                 </span>
