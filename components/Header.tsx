@@ -25,11 +25,11 @@ export default function Header() {
             <Image
               src='/estudaDF.png'
               alt='EstudaDF'
-              width={180}
-              height={168}
+              width={160}
+              height={160}
               priority
               style={{ height: 'auto' }}
-              className='rounded-full w-16 md:w-22.5'
+              className='w-40 p-3'
             />
           </Link>
         </div>
